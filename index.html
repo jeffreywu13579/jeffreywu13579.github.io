@@ -1,163 +1,186 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeffrey Wu</title>
+<meta name="description" content="Homepage of Jeffrey Wu">
+<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://jeffreywu13579.github.io">
+<script>
+    function unhide(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+            item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+    }
+</script>
+</head>
+<body>
+<header class="wrapper">
 
-    <title>Jeffrey Wu</title>
 
-    <meta name="author" content="Jeffrey Wu">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<div style="font-size: 1.7em; font-weight: 450;">Jeffrey Wu</div>
+
+
+<nav>
+ <a href="mailto:jgw2140@columbia.edu" target="_blank">Email</a>
+ <a href="https://scholar.google.com/citations?user=jH_7A6gAAAAJ&hl=en" target="_blank"> Scholar </a>
+ <a href="https://github.com/jeffreywu13579/" target="_blank">GitHub</a>
+ <a href="docs/fa24_cv.pdf" target="_blank">CV</a>
+</nav>
+</header>
+<main>
+<article class="wrapper">
+
+<div class="intro">
+<div class="left">
+  <img class="face" src="images/portrait.jpg" />
+</div>
+
+
+<div class="right">
+  <p style="font-size: 1.1em; margin-top: 0.2em">
+    I am a first-year CS PhD student at Columbia University, where I am advised by Professor 
+    <a href="https://causalai.net/"> Elias Bareinboim</a>. 
+    My general research interests span the intersection of machine learning and robotics.</p>
+  <p style="font-size: 1.1em; margin-top: -0.0em">
+    Previously, I received my bachelor's degree and master's degree in computer science at UC Berkeley, where I was advised by Professor
+    <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+    and mentored by <a href="https://people.eecs.berkeley.edu/~jianlanluo/">Jianlan Luo</a>
+    in the <a href="https://rail.eecs.berkeley.edu/">Robotic AI & Learning Lab (RAIL)</a> as part of 
+    <a href="https://bair.berkeley.edu/"> BAIR</a>. At Berkeley, I worked on deep reinforcement learning and its 
+    applications to robotic manipulation.</p>
+  </p>
+
+</div>
+
+</div>
+
+
+<h2>Research</h2>
+<ul class="collection">
+
+
+  <li>
+    <div class="thumb">
+      <img src="images/hilserl.gif" />
+    </div>
+    <div class="text">
+      <a href="https://arxiv.org/pdf/2410.21845" target="_blank">
+        <h3>Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning
+        </h3>
+      </a>
+      <p class="authors">
+        Jianlan Luo, Charles Xu, <b style="font-weight: 600">Jeffrey Wu</b>, Sergey Levine
+      </p>
+      <p class="venues">arXiv, 2024</p>
+      <p class="buttons">
+        <a href="javascript:unhide('hilserl2024tldr');">TLDR</a> | 
+        <a href="https://hil-serl.github.io/" target="_blank">Website</a>|
+        <a href="https://arxiv.org/pdf/2410.21845" target="_blank">Paper</a>|
+        <a href="https://github.com/rail-berkeley/hil-serl" target="_blank">Code</a>
+        <div id="hilserl2024tldr" class="hidden"><hr><b>TLDR:</b> We present a
+          human-in-the-loop vision-based RL system that demonstrates near-perfect success rates and fast 
+          cycle times on a diverse set of dexterous manipulation tasks, including dynamic manipulation, 
+          precision assembly, and dual-arm coordination <br></div>
+        </div>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="thumb">
+      <img src="images/saq_animation.gif" />
+    </div>
+    <div class="text">
+      <a href="https://arxiv.org/pdf/2310.11731.pdf" target="_blank">
+        <h3>Action-Quantized Offline Reinforcement Learning for Robotic Skill Learning
+        </h3>
+      </a>
+      <p class="authors">
+        Jianlan Luo, Perry Dong, <b style="font-weight: 600">Jeffrey Wu</b>, Aviral Kumar, Xinyang Geng, Sergey Levine
+      </p>
+      <p class="venues">Conference on Robot Learning (CoRL), 2023</p>
+      <p class="buttons">
+        <a href="javascript:unhide('saqrl2023tldr');">TLDR</a> | 
+        <a href="https://saqrl.github.io" target="_blank">Website</a>|
+        <a href="https://arxiv.org/pdf/2310.11731.pdf" target="_blank">Paper</a>|
+        <a href="https://github.com/jianlanluo/SAQ" target="_blank">Code</a>
+        <div id="saqrl2023tldr" class="hidden"><hr><b>TLDR:</b> We show that state-of-the-art offline RL methods
+          can perform better in discretized action spaces compared to their continuous counterparts 
+          by using a VQ-VAE to learn state-conditioned action quantization.<br></div>
+        </div>
+      </p>
+    </div>
+  </li>
+
+  <li>
+    <div class="thumb">
+      <img src="images/fmb.gif" />
+    </div>
+    <div class="text">
+      <a href="https://arxiv.org/pdf/2401.08553" target="_blank">
+        <h3>FMB: A Functional Manipulation Benchmark for Generalizable Robotic Learning
+        </h3>
+      </a>
+      <p class="authors">
+        Jianlan Luo*, Charles Xu*, Fangchen Liu, Liam Tan, Zipeng Lin, <b style="font-weight: 600">Jeffrey Wu</b>, Pieter Abbeel, Sergey Levine
+      </p>
+      <p class="venues">International Journal of Robotics Research (IJRR), 2024</p>
+      <p class="buttons">
+        <a href="javascript:unhide('fmb2024tldr');">TLDR</a> | 
+        <a href="https://functional-manipulation-benchmark.github.io/" target="_blank">Website</a>|
+        <a href="https://arxiv.org/pdf/2401.08553" target="_blank">Paper</a>|
+        <a href="https://github.com/rail-berkeley/fmb" target="_blank">Code</a>
+        <div id="fmb2024tldr" class="hidden"><hr><b>TLDR:</b> We present a benchmark for studying robotic learning for 
+          functional manipulation featuring of a variety of easily reproducible 3D printed objects, 
+          with each one requiring a sequence of grasping, reorientation, and assembly behaviors.<br></div>
+        </div>
+      </p>
+    </div>
+  </li>
+
+
+<h2>Teaching</h2>
+<ul class="collection">
     
-  </head>
+<li>
+  <div class="thumb2">
+    <img style="width: 100%;" src="images/berkeley_eecs.png" />
+  </div>
+  <div class="text">
+    <a href="https://www2.eecs.berkeley.edu/Courses/EE122/" target="_blank">
+      <h3>EE122: Introduction to Communication Networks</h3>
+    </a>
+    <p class="venues">UC Berkeley, Spring 2023 (uGSI)</p>
+    <div style="margin-top: 2rem;"></div>
+    <a href="https://www2.eecs.berkeley.edu/Courses/EECS127/" target="_blank">
+      <h3>EECS 127: Optimization Models in Engineering</h3>
+    </a>
+    <p class="venues">UC Berkeley, Spring 2022 (Reader) and Fall 2022 (Tutor)</p>
+  </div>
 
-  <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Jeffrey Wu
-                </p>
-                <p>
-                  I am a first-year CS PhD student at Columbia University, where I am advised by Professor 
-                  <a href="https://causalai.net/"> Elias Bareinboim</a>. 
-                  My general research interests span the intersection of machine learning and robotics.
-                </p>
-                <p>
-                  Previously, I received my bachelor's degree and master's degree in computer science at UC Berkeley, where I was advised by Professor
-                  <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
-                  and mentored by <a href="https://people.eecs.berkeley.edu/~jianlanluo/">Jianlan Luo</a>
-                  in the <a href="https://rail.eecs.berkeley.edu/">Robotic AI & Learning Lab (RAIL)</a> as part of 
-                  <a href="https://bair.berkeley.edu/"> BAIR</a>. At Berkeley, I worked on deep reinforcement learning and its 
-                  applications to robotic manipulation.
-                </p>
-                <p style="text-align:center">
-                  jgw2140 [at] columbia [dot] edu &nbsp;/&nbsp;
-                  <a href="https://github.com/jeffreywu13579/">GitHub</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=jH_7A6gAAAAJ&hl=en">Google Scholar</a>  &nbsp;/&nbsp;
-                  <a href="https://jeffreywu13579.github.io/docs/fa24_cv.pdf">CV</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/portrait.jpg"><img style="width:80%;max-width:80%;object-fit: cover;" alt="profile photo" src="images/portrait.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
+</li>
 
-	  
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-              </td>
-            </tr>
-          </tbody></table>
+<footer style="margin-top: 4rem; font-size: 16px; color: #000;">
+  Inspired by <a href="https://www.ericswallace.com/" target="_blank" style="color: darkred; text-decoration: none;">
+    <span style="text-decoration: underline;">Eric Wallace's</span>
+  </a> website
+</footer>
+</article>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                  <img src="images/hilserl.gif" alt="project image" style="width:auto; height:auto; max-width:100%;">
-                </td>
-                <td style="padding:2.5%;width:75%;vertical-align:middle">
-                  <h3>Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning</h3>
-                  <p style="margin: 0;">Jianlan Luo, Charles Xu, <strong>Jeffrey Wu</strong>, Sergey Levine</p>
-                  <em>arXiv, 2024</em> <br>
-                  <a href="https://hil-serl.github.io/">website</a> /
-                  <a href="https://arxiv.org/pdf/2410.21845">paper</a> /
-                  <a href="https://github.com/rail-berkeley/hil-serl">code</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+</main>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                  <img src="images/saq_animation.gif" alt="project image" style="width:auto; height:auto; max-width:100%;">
-                </td>
-                <td style="padding:2.5%;width:75%;vertical-align:middle">
-                  <h3>Action-Quantized Offline Reinforcement Learning for Robotic Skill Learning</h3>
-                  <p style="margin: 0;">Jianlan Luo, Perry Dong, <strong>Jeffrey Wu</strong>, Aviral Kumar, Xinyang Geng, Sergey Levine</p>
-                  <em>Conference on Robot Learning (CoRL)</em>, 2023 <br> 
-                  <a href="https://saqrl.github.io">website</a> /
-                  <a href="https://arxiv.org/pdf/2310.11731.pdf">paper</a> /
-                  <a href="https://github.com/jianlanluo/SAQ">code</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-                  <img src="images/fmb.gif" alt="project image" style="width:auto; height:auto; max-width:100%;">
-                </td>
-                <td style="padding:2.5%;width:75%;vertical-align:middle">
-                  <h3>FMB: A Functional Manipulation Benchmark for Generalizable Robotic Learning</h3>
-                  <p style="margin: 0;">Jianlan Luo*, Charles Xu*, Fangchen Liu, Liam Tan, Zipeng Lin, <strong>Jeffrey Wu</strong>, Pieter Abbeel, Sergey Levine</p>
-                  <em>International Journal of Robotics Research (IJRR)</em>, 2024 <br> 
-                  <a href="https://functional-manipulation-benchmark.github.io/">website</a> /
-                  <a href="https://arxiv.org/pdf/2401.08553">paper</a> /
-                  <a href="https://github.com/rail-berkeley/fmb">code</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          
-          
-          
-        
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr>
-      <td style="padding:20px;width:100%;vertical-align:middle">
-        <h2>Teaching</h2>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-  <tbody>
-    <tr>
-      <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
-        <img src="/images/berkeley_eecs.png" alt="project image" style="width:auto; height:auto; max-width:100%;">
-      </td>
-      <td style="padding:2.5%;width:75%;vertical-align:middle">
-        <h3>EE 122: Introduction to Communication Networks</h3>
-        <p>uGSI: Spring 2023</p>
-        <br>
-        <h3>EECS 127: Optimization Models in Engineering</h3>
-        <p>Reader: Spring 2022, Tutor: Fall 2022</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!-- <footer style="text-align: center; margin-top: 2rem; font-size: 14px; color: #000;">
+  Inspired by <a href="https://www.ericswallace.com/" target="_blank" style="color: darkred; text-decoration: none;">
+    <span style="text-decoration: underline;">Eric Wallace's</span>
+  </a> website
+</footer> -->
 
 
 
 
-	  
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  Design and source code from <a href="hhttps://jonbarron.info/">Jon Barron</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+</body>
 </html>
