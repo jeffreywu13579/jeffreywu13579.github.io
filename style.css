@@ -687,6 +687,11 @@ article>h1:first-child {
     color: #000
 }
 
+.cover .semesters {
+    margin: 1em 0;
+    color: #000
+}
+
 .cover .image {
     margin: 1.4em 0 .5em
 }
@@ -857,7 +862,11 @@ pre {
 }
 
 .collection .venues {
-    color: #000; 
+    color: #666;
+}
+
+.collection .semesters {
+    color: #000;
 }
 
 .collection .stars {
